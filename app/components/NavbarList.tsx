@@ -10,7 +10,20 @@ interface NavbarListProp {
 
 const NavbarList = ({ name, href, currentPath }: NavbarListProp) => {
   return (
-    <li><Link className={classNames({ 'hover:border-b': true, 'border-b': href === currentPath })} href={href}>{name}</Link></li>
+    <li>
+      <Link className={classNames(
+        {
+          'hover:text-zinc-800': true,
+          'text-zinc-900': href === currentPath,
+          'text-zinc-500': true
+
+        }
+      )}
+        href={href}
+      >
+        {name}
+      </Link>
+    </li>
   )
 }
 

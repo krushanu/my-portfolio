@@ -10,10 +10,9 @@ const HomeContent = () => {
   return (
     <div className='flex justify-center'>
       <div className='text-center'>
-        <h1>{firstName} <br /> {lastName}</h1>
-        <p>Fun loving Gadget Geek<br />Loves Javascript<br />
-          <Link className="btn  btn-primary my-10" href="/universe" >Explore my universe</Link>
-        </p>
+        <h1 className='my-40'>{firstName} <br /> {lastName}</h1>
+        <h4 className='my-10'>Fun loving Gadget Geek<br />Loves Javascript<br /></h4>
+        <Link className="btn btn-primary rounded-full my-10" href="/universe" >Explore my universe</Link>
         <LinkList />
         <CountryFlags />
       </div>
