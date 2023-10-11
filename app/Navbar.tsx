@@ -1,6 +1,7 @@
-import Link from 'next/link'
+'use client'
 import React from 'react'
 import NavbarList from './components/NavbarList'
+import { usePathname } from 'next/navigation'
 
 const NavList = [
   { label: 'Home', href: '/' },
@@ -11,10 +12,13 @@ const NavList = [
 ]
 
 const Navbar = () => {
+  const currentPath = usePathname()
+  if (currentPath === '/') return null
   return (
-    <nav>
-      <ul>
-        {NavList.map((eachItem, index) => <NavbarList key={index} name={eachItem.label} href={eachItem.href} />)}
+    <nav className='justify-center border-b'>
+      <h2>Krushanu Mohapatra</h2>
+      <ul className='flex justify-center h-14 Item-center space-x-5'>
+        {NavList.map((eachItem, index) => <NavbarList currentPath={currentPath} key={index} name={eachItem.label} href={eachItem.href} />)}
       </ul>
     </nav>
   )

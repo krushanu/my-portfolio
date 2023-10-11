@@ -2,7 +2,7 @@ import React from 'react'
 
 const CountryFlags = () => {
   return (
-    <ul className='flex justify-center'>
+    <ul className='flex justify-center space-x-1'>
       <li className="tooltip tooltip-bottom p-3 text-xl" data-tip='India'>🇮🇳<span hidden >India</span></li>
       <li className="tooltip tooltip-bottom p-3 text-xl" data-tip='Singapore'>🇸🇬<span hidden >Singapore</span></li>
       <li className="tooltip tooltip-bottom p-3 text-xl" data-tip='Germany'>🇩🇪<span hidden >Germany</span></li>

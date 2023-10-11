@@ -12,7 +12,7 @@ const HomeContent = () => {
       <div className='text-center'>
         <h1>{firstName} <br /> {lastName}</h1>
         <p>Fun loving Gadget Geek<br />Loves Javascript<br />
-          <Link className="btn  btn-primary my-10" href="/explore" >Explore my universe</Link>
+          <Link className="btn  btn-primary my-10" href="/universe" >Explore my universe</Link>
         </p>
         <LinkList />
         <CountryFlags />
@@ -22,4 +22,3 @@ const HomeContent = () => {
 }
 
 export default HomeContent
-

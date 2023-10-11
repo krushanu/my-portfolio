@@ -1,14 +1,16 @@
+import classNames from 'classnames'
 import Link from 'next/link'
 import React from 'react'
 
 interface NavbarListProp {
   name: string,
-  href: string
+  href: string,
+  currentPath: string;
 }
 
-const NavbarList = ({ name, href }: NavbarListProp) => {
+const NavbarList = ({ name, href, currentPath }: NavbarListProp) => {
   return (
-    <li><Link href={href}>{name}</Link></li>
+    <li><Link className={classNames({ 'hover:border-b': true, 'border-b': href === currentPath })} href={href}>{name}</Link></li>
   )
 }
 
