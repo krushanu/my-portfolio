@@ -1,9 +1,13 @@
-import Image from 'next/image'
+import HomeImage from './components/HomeImage'
+import HomeContent from './components/HomeContent'
 
 export default function Home() {
   return (
-    <main className='p-5'>
-      <p>An awesome page is in making...</p>
+    <main className='container'>
+      <div className='grid grid-cols-2'>
+        <HomeImage />
+        <HomeContent />
+      </div>
     </main>
   )
 }
