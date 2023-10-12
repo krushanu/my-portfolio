@@ -8,7 +8,7 @@ const lastName = "Mohapatra"
 
 const HomeContent = () => {
   return (
-    <div className='flex justify-center p-2'>
+    <div className='flex items-center lg:h-screen justify-center p-2'>
       <div className='text-center'>
         <h1 className=''>{firstName} <br /> {lastName}</h1>
         <h4 className='my-10'>Fun loving Gadget Geek<br />Loves Javascript<br /></h4>
