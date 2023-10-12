@@ -3,7 +3,6 @@ import React from 'react'
 import myDisplayPicture from "../../public/my_display_picture.jpg"
 
 const HomeImage = () => {
-  console.log("window.innerWidth", window.innerWidth)
   return (
     <div className="relative h-screen">
       <Image
