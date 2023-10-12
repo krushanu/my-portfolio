@@ -8,11 +8,11 @@ const lastName = "Mohapatra"
 
 const HomeContent = () => {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center p-2'>
       <div className='text-center'>
-        <h1 className='my-40'>{firstName} <br /> {lastName}</h1>
+        <h1 className=''>{firstName} <br /> {lastName}</h1>
         <h4 className='my-10'>Fun loving Gadget Geek<br />Loves Javascript<br /></h4>
-        <Link className="btn btn-primary rounded-full my-10" href="/universe" >Explore my universe</Link>
+        <Link className="btn btn-primary rounded-full mb-10" href="/universe" >Explore my universe</Link>
         <LinkList />
         <CountryFlags />
       </div>

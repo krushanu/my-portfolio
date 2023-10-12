@@ -3,18 +3,37 @@ import React from 'react'
 import myDisplayPicture from "../../public/my_display_picture.jpg"
 
 const HomeImage = () => {
+  console.log("window.innerWidth", window.innerWidth)
   return (
-    <div>
-      {/* <div className='relative h-screen'> */}
+    <div className="relative h-screen">
       <Image
         src={myDisplayPicture}
         alt="My Display Picture"
-      // layout="responsive"
-      // loading="lazy"
-      className='object-cover'
+        priority
+        placeholder='blur'
+        quality={100}
+        fill={true}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+        className="object-cover overflow-hidden"
       />
     </div>
   )
 }
 
 export default HomeImage
+
+//   < Image
+// src = { myDisplayPicture }
+// alt = "My Display Picture"
+// priority
+// fill
+// sizes = "100vw"
+// quality = { 100}
+// className = "object-cover"
+
+//   // style={{
+//   //   objectFit: 'cover',
+//   //   // width: '100%',
+//   //   // height: 'auto',
+//   // }}
+//   />

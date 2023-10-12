@@ -10,7 +10,11 @@ interface SocialMediaLinks {
 
 const SocialMediaLinks = ({ src, alt, redirectTo }: SocialMediaLinks) => {
   return (
-    <li><Link href={redirectTo}><Image width={40} src={src} alt={alt} /></Link></li>
+    <li className="tooltip tooltip-top text-xl" data-tip={alt}>
+      <Link href={redirectTo}>
+        <Image width={30} src={src} alt={alt} />
+      </Link>
+    </li>
   )
 }
 

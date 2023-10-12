@@ -25,7 +25,7 @@ const SocialLinks = [
 const LinkList = () => {
   return (
     <>
-      <ul className='flex justify-center space-x-5'>
+      <ul className='justify-center space-x-4'>
         {SocialLinks.map((eachLink, index) => <SocialMediaLinks key={index} src={eachLink.src} alt={eachLink.alt} redirectTo={eachLink.redirectTo} />)}
       </ul>
       <div hidden>
