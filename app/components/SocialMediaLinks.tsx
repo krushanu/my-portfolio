@@ -12,7 +12,7 @@ const SocialMediaLinks = ({ src, alt, redirectTo }: SocialMediaLinks) => {
   return (
     <li className="tooltip tooltip-top text-xl" data-tip={alt}>
       <Link href={redirectTo}>
-        <Image width={30} src={src} alt={alt} />
+        <Image className='w-14' src={src} alt={alt} />
       </Link>
     </li>
   )

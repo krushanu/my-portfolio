@@ -1,13 +1,13 @@
 import React from 'react'
 
-import twitter from '@/public/twitter.png'
-import linkedin from '@/public/linkedin.png'
-import facebook from '@/public/facebook.png'
-import instagram from '@/public/instagram.png'
-import youtube from '@/public/youtube.png'
-import github from '@/public/github.png'
-import npm from '@/public/npm.png'
-import mail from '@/public/email.png'
+import twitter from '@/public/twitter.svg'
+import linkedin from '@/public/linkedin.svg'
+import facebook from '@/public/facebook.svg'
+import instagram from '@/public/instagram.svg'
+import youtube from '@/public/youtube.svg'
+import github from '@/public/github.svg'
+import npm from '@/public/npm.svg'
+import mail from '@/public/email.svg'
 
 import SocialMediaLinks from './SocialMediaLinks'
 
@@ -28,9 +28,6 @@ const LinkList = () => {
       <ul className='justify-center space-x-4'>
         {SocialLinks.map((eachLink, index) => <SocialMediaLinks key={index} src={eachLink.src} alt={eachLink.alt} redirectTo={eachLink.redirectTo} />)}
       </ul>
-      <div hidden>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs">Uniconlabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/fathema-khanom" title="Fathema Khanom">Fathema Khanom</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/md-tanvirul-haque" title="Md Tanvirul Haque">Md Tanvirul Haque</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/laisa-islam-ani" title="Laisa Islam Ani">Laisa Islam Ani</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/grow-studio" title="Grow studio">Grow studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/artist" title="-Artist">-Artist</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-      </div>
     </>
   )
 }
