@@ -1,0 +1,17 @@
+export { default as Canada } from "./Canada.svg";
+export { default as Email } from "./Email.svg";
+export { default as Facebook } from "./Facebook.svg";
+export { default as Germany } from "./Germany.svg";
+export { default as Github } from "./Github.svg";
+export { default as India } from "./India.svg";
+export { default as Indonesia } from "./Indonesia.svg";
+export { default as Instagram } from "./Instagram.svg";
+export { default as Malaysia } from "./Malaysia.svg";
+export { default as Npm } from "./Npm.svg";
+export { default as Portugal } from "./Portugal.svg";
+export { default as Singapore } from "./Singapore.svg";
+export { default as Spain } from "./Spain.svg";
+export { default as Switzerland } from "./Switzerland.svg";
+export { default as Twitter } from "./Twitter.svg";
+export { default as UnitedKingdom } from "./UnitedKingdom.svg";
+export { default as Youtube } from "./Youtube.svg";
