@@ -9,8 +9,8 @@ interface CountryListProps {
 const CountryList = ({ src, code }: CountryListProps) => {
   return (
     <li className="tooltip tooltip-bottom text-xl" data-tip={code}>
-      <src />
-      {/* <Image width={25} height={25} src={src} alt={code} /> */}
+      {/* <src /> */}
+      <Image width={25} height={25} src={src} alt={code} />
       <span hidden>{code}</span>
     </li>
   );

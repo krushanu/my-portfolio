@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-// import LinkList from './LinkList'
+import LinkList from './LinkList'
 import CountryFlags from './CountryFlags'
 
 const firstName = "Krushanu"
@@ -13,7 +13,7 @@ const HomeContent = () => {
         <h1 className=''>{firstName} <br /> {lastName}</h1>
         <h4 className=''>Fun loving Gadget Geek<br />Loves Javascript<br /></h4>
         <Link className="btn btn-primary rounded-full" href="/universe" >Explore my universe</Link>
-        {/* <LinkList /> */}
+        <LinkList />
         <CountryFlags />
       </div>
     </div>

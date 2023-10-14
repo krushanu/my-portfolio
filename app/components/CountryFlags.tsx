@@ -13,7 +13,7 @@ import React from "react";
 //   Canada,
 // } from "@/app/components/svg";
 
-import Canada from "./svg/Canada.svg";
+// import Canada from "./svg/Canada.svg";
 
 import CountryList from "./CountryList";
 import Image from "next/image";
