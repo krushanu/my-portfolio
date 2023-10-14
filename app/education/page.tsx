@@ -1,6 +1,12 @@
-import React from 'react'
+import React from "react";
+import WorkInProgress from "../components/WorkInProgress";
+
+const CURRENTPAGE = "Education";
 
 const EducationPage = () => {
+  if (process.env.PAGEINPROGRESS?.includes(CURRENTPAGE))
+    return <WorkInProgress />;
+
   return (
     <div>
       <h1>Education Page</h1>
@@ -23,9 +29,8 @@ Link: https://www.soa.ac.in/iter
 
         `}
       </p>
-
     </div>
-  )
-}
+  );
+};
 
-export default EducationPage
+export default EducationPage;
