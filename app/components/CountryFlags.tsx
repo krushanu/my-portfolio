@@ -36,13 +36,6 @@ const CountryFlags = () => {
           code={eachItem.code}
         />
       ))}
-
-      {/* {CountrySourceCode.map((eachItem, index) => (
-        <li key={index} className="tooltip tooltip-bottom text-xl" data-tip={eachItem.src}>
-          <Image loading="lazy" className='w-10' src={eachItem.src} alt={eachItem.code} />
-          <span hidden >{eachItem.src}</span>
-        </li>
-      ))} */}
     </ul>
   );
 };
