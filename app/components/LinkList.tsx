@@ -49,7 +49,7 @@ const SocialLinks = [
   {
     src: mail,
     alt: "Email",
-    redirectTo: "https://www.facebook.com/chiku.krushanu",
+    redirectTo: "mailto:me@krushanu.com?bcc=mohapatrakrushanu@gmail.com",
   },
 ];
 

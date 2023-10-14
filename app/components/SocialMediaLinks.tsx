@@ -11,7 +11,7 @@ interface SocialMediaLinks {
 const SocialMediaLinks = ({ src, alt, redirectTo }: SocialMediaLinks) => {
   return (
     <li className="tooltip tooltip-top text-xl" data-tip={alt}>
-      <Link href={redirectTo}>
+      <Link href={redirectTo} target="_blank">
         <Image
           className="w-14 h-14 lg:w-9 lg:h-9 xl:w-12 xl:h-12"
           src={src}
