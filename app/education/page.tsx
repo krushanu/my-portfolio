@@ -1,14 +1,11 @@
 import React from "react";
-import WorkInProgress from "../components/WorkInProgress";
+import WIPWrapper from "../modules/WIPWrapper";
 
 const CURRENTPAGE = "Education";
 
 const EducationPage = () => {
-  if (process.env.PAGEINPROGRESS?.includes(CURRENTPAGE))
-    return <WorkInProgress />;
-
   return (
-    <div>
+    <WIPWrapper currentPage={CURRENTPAGE}>
       <h1>Education Page</h1>
       <p>
         {`
@@ -29,7 +26,7 @@ Link: https://www.soa.ac.in/iter
 
         `}
       </p>
-    </div>
+    </WIPWrapper>
   );
 };
 

@@ -1,14 +1,11 @@
 import React from "react";
-import WorkInProgress from "../components/WorkInProgress";
+import WIPWrapper from "../modules/WIPWrapper";
 
 const CURRENTPAGE = "WorkExperience";
 
 const WorkExperiencePage = () => {
-  if (process.env.PAGEINPROGRESS?.includes(CURRENTPAGE))
-    return <WorkInProgress />;
-
   return (
-    <div>
+    <WIPWrapper currentPage={CURRENTPAGE}>
       <h1>Work Experience Page</h1>
       <p>
         {`
@@ -92,7 +89,7 @@ const WorkExperiencePage = () => {
 
 `}
       </p>
-    </div>
+    </WIPWrapper>
   );
 };
 

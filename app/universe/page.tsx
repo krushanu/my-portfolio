@@ -1,13 +1,10 @@
 import React from "react";
-import WorkInProgress from "../components/WorkInProgress";
+import WIPWrapper from "../modules/WIPWrapper";
 
 const CURRENTPAGE = "Universe";
 
 const UniversePage = () => {
-  if (process.env.PAGEINPROGRESS?.includes(CURRENTPAGE))
-    return <WorkInProgress />;
-
-  return <div>UniversePage</div>;
+  return <WIPWrapper currentPage={CURRENTPAGE}>UniversePage</WIPWrapper>;
 };
 
 export default UniversePage;

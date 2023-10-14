@@ -1,10 +1,10 @@
 import React from "react";
-import WorkInProgress from "../components/WorkInProgress";
+import WIPWrapper from "../modules/WIPWrapper";
+
+const CURRENTPAGE = "ContactMe";
 
 const ContactMePage = () => {
-  if (process.env.PAGEINPROGRESS?.includes("ContactMe"))
-    return <WorkInProgress />;
-  return <div>Contact Me</div>;
+  return <WIPWrapper currentPage={CURRENTPAGE}>Contact Me</WIPWrapper>;
 };
 
 export default ContactMePage;
