@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import WorkInProgress from "../components/WorkInProgress";
 
 const ContactMePage = () => {
-  return (
-    <div>Contact Me</div>
-  )
-}
+  if (process.env.PAGEINPROGRESS?.includes("ContactMe"))
+    return <WorkInProgress />;
+  return <div>Contact Me</div>;
+};
 
-export default ContactMePage
+export default ContactMePage;

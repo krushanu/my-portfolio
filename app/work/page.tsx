@@ -1,6 +1,12 @@
-import React from 'react'
+import React from "react";
+import WorkInProgress from "../components/WorkInProgress";
+
+const CURRENTPAGE = "WorkExperience";
 
 const WorkExperiencePage = () => {
+  if (process.env.PAGEINPROGRESS?.includes(CURRENTPAGE))
+    return <WorkInProgress />;
+
   return (
     <div>
       <h1>Work Experience Page</h1>
@@ -87,7 +93,7 @@ const WorkExperiencePage = () => {
 `}
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default WorkExperiencePage
+export default WorkExperiencePage;

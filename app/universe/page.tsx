@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import WorkInProgress from "../components/WorkInProgress";
+
+const CURRENTPAGE = "Universe";
 
 const UniversePage = () => {
-  return (
-    <div>UniversePage</div>
-  )
-}
+  if (process.env.PAGEINPROGRESS?.includes(CURRENTPAGE))
+    return <WorkInProgress />;
 
-export default UniversePage
+  return <div>UniversePage</div>;
+};
+
+export default UniversePage;
