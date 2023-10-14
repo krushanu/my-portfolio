@@ -28,7 +28,7 @@ const CountrySourceCode = [
 
 const CountryFlags = () => {
   return (
-    <ul className="justify-center space-x-4">
+    <ul className="justify-center space-x-4 lg:space-x-2 xl:lg:space-x-4">
       {CountrySourceCode.map((eachItem) => (
         <CountryList
           key={eachItem.src}

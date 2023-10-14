@@ -56,7 +56,7 @@ const SocialLinks = [
 const LinkList = () => {
   return (
     <>
-      <ul className="justify-center space-x-4">
+      <ul className="justify-center space-x-4 lg:space-x-2 xl:lg:space-x-4">
         {SocialLinks.map((eachLink, index) => (
           <SocialMediaLinks
             key={index}
