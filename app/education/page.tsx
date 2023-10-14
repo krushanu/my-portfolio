@@ -4,7 +4,6 @@ import WorkInProgress from "../components/WorkInProgress";
 const CURRENTPAGE = "Education";
 
 const EducationPage = () => {
-  console.log("PAGEINPROGRESS", process.env.PAGEINPROGRESS);
   if (process.env.PAGEINPROGRESS?.includes(CURRENTPAGE))
     return <WorkInProgress />;
 
