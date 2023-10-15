@@ -8,7 +8,7 @@ const config: Config = {
   ],
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["emerald", "bumblebee", "retro", "cupcake"],
+    themes: ["emerald", "bumblebee", "retro", "cupcake", "aqua"],
   },
 };
 export default config;
