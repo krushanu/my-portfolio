@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./Navbar";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} data-theme="wireframe">
         <Navbar />
         <main>
+          <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
           {children}
           <Analytics />
         </main>
@@ -29,3 +31,4 @@ export default function RootLayout({
     </html>
   );
 }
+0
