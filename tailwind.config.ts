@@ -28,6 +28,7 @@ const config: Config = {
       "cupcake",
       "lofi",
       "wireframe",
+      "pastel",
     ],
   },
   plugins: [daisyui],

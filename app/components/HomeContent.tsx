@@ -10,7 +10,7 @@ const HomeContent = () => {
   return (
     <div className="flex items-center lg:h-screen justify-center p-2">
       <div className="text-center space-y-8 lg:space-y-14">
-        <h1 className="">
+        <h1 className="uppercase text-5xl">
           {firstName} <br /> {lastName}
         </h1>
         <h4 className="">
@@ -19,7 +19,10 @@ const HomeContent = () => {
           Loves Javascript
           <br />
         </h4>
-        <Link className="btn btn-primary rounded-full" href="/universe">
+        <Link
+          className="btn btn-active btn-neutral rounded-full"
+          href="/universe"
+        >
           Explore my universe
         </Link>
         <LinkList />

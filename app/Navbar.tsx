@@ -16,8 +16,8 @@ const Navbar = () => {
   if (currentPath === "/") return null;
   return (
     <nav className="justify-center border-b">
-      <h2 className="px-3">Krushanu Mohapatra</h2>
-      <ul className="flex justify-center h-14 Item-center space-x-5">
+      <h2 className="px-3 text-xl">Krushanu Mohapatra</h2>
+      <ul className="flex justify-center h-10 Item-center space-x-5">
         {NavList.map((eachItem, index) => (
           <NavbarList
             currentPath={currentPath}

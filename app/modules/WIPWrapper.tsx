@@ -9,7 +9,7 @@ interface WIPWrapperProps {
 const WIPWrapper = ({ currentPage, children }: WIPWrapperProps) => {
   if (currentPage && process.env.PAGEINPROGRESS?.includes(currentPage))
     return <WorkInProgress />;
-  return <>{children};</>;
+  return <>{children}</>;
 };
 
 export default WIPWrapper;

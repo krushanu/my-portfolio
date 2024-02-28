@@ -10,12 +10,12 @@ const CURRENTPAGE = "ContactMe";
 
 const ContactMePage = () => {
   const submit = () => {
-    alert("Hey there");
+    alert("Hey there! This feature is not active now.");
   };
 
   return (
     <WIPWrapper currentPage={CURRENTPAGE}>
-      <section className="flex justify-center items-center">
+      <section className="flex justify-center items-center lg:h-screen">
         <form
           // action={sendEmail}
           onSubmit={submit}
@@ -48,7 +48,7 @@ const ContactMePage = () => {
               name="message"
             ></textarea>
             <div className="card-actions justify-end">
-              <button type="submit" className="btn btn-secondary">
+              <button type="submit" className="btn btn-active btn-neutral">
                 Send
               </button>
             </div>

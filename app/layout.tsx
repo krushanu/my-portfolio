@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} data-theme="wireframe">
+      <body className={inter.className} data-theme="pastel">
         <Navbar />
         <main>
           <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
