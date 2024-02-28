@@ -10,7 +10,7 @@ const CURRENTPAGE = "ContactMe";
 
 const ContactMePage = () => {
   const submit = () => {
-    alert("Hey there! This feature is not active now.");
+    alert("Hey there! Send email feature is not active now.");
   };
 
   return (
