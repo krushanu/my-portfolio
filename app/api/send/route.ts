@@ -1,16 +1,18 @@
 /*
-* This API is currently not in use 
-*/
+ * This API is currently not in use
+ */
 
 import { Resend } from "resend";
-import * as React from "react";
+import { NextRequest, NextResponse } from "next/server";
+
 import { EmailTemplate } from "@/app/components/email-template";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: any) {
+export async function POST(request: NextRequest) {
   try {
-    const { name, email, number, message } = await req.JSON();
+    const { name, email, number, message } = await request.json();
+
     const { data, error } = await resend.emails.send({
       from: "info <info@krushanu.com>",
       to: ["me@krushanu.com"],
@@ -28,8 +30,9 @@ export async function POST(req: any) {
       return Response.json({ error });
     }
 
-    return Response.json({ data });
+    return NextResponse.json({ data });
   } catch (error) {
-    return Response.json({ error });
+    console.error("error: ", error);
+    return Response.json({ error: "api errror" });
   }
 }

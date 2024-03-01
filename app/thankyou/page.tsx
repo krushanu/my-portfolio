@@ -7,7 +7,7 @@ const CURRENTPAGE = "ThankYou";
 const ThankYou = () => {
   return (
     <WIPWrapper currentPage={CURRENTPAGE}>
-      <section className="flex justify-center items-center">
+      <section className="flex justify-center items-center lg:h-screen">
         <div className="card w-96 bg-primary text-primary-content">
           <div className="card-body">
             <h2 className="card-title">Thank You</h2>
