@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 const CURRENTPAGE = "ContactMe";
 
 const ContactMePage = () => {
-  const submit = (event) => {
+  const submit = (event:any) => {
     event.preventDefault();
     toast.success("Hey there! Send email feature is not active now.", {
       position: "top-center",
