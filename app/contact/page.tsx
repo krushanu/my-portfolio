@@ -22,14 +22,14 @@ const ContactMePage = () => {
   const { register, handleSubmit } = useForm<EmailTemplateProps>();
   const router = useRouter();
 
-  const submit: SubmitHandler<EmailTemplateProps> = async (data) => {
+  const submit: SubmitHandler<EmailTemplateProps> = async (emailData) => {
     try {
-      const response = await axios.post("/api/send", { ...data });
+      const { data } = await axios.post("/api/send", { ...emailData });
       toast.success("email sent", { position: "top-center" });
       router.push("/thankyou");
     } catch (error) {
-      console.log("error", error);
-      toast.error("error");
+      // console.log(error.response);
+      toast.error("Please enter valid data ", { position: "top-center" });
     }
   };
 

@@ -24,10 +24,13 @@ export async function POST(request: NextRequest) {
     const parsed = await emailSchema.safeParse(emailBody);
 
     if (!parsed.success) {
-      return NextResponse.json({
-        message: "Error while parsing email data",
-        parsed,
-      });
+      return NextResponse.json(
+        {
+          message: "Error while parsing email data",
+          parsed,
+        },
+        { status: 500 }
+      );
     }
 
     const { data, error } = await resend.emails.send({
