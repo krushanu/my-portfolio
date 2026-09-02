@@ -10,6 +10,7 @@ import Malaysia from "@/public/Malaysia.svg";
 import Indonesia from "@/public/Indonesia.svg";
 import UnitedKingdom from "@/public/UnitedKingdom.svg";
 import Canada from "@/public/Canada.svg";
+import Qatar from "@/public/Qatar.svg";
 
 import CountryList from "./CountryList";
 
@@ -24,6 +25,7 @@ const CountrySourceCode = [
   { src: Indonesia, code: "ID" },
   { src: UnitedKingdom, code: "GB" },
   { src: Canada, code: "CA" },
+  { src: Qatar, code: "QA" },
 ];
 
 const CountryFlags = () => {
